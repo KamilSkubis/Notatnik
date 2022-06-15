@@ -12,7 +12,7 @@ import skubis.kamil.notatnik.model.Note;
 import skubis.kamil.notatnik.persistence.NotepadDb;
 
 public class AddNoteActivity extends AppCompatActivity {
-    private TextInputLayout titleInput;
+    private TextInputEditText titleInput;
     private TextInputEditText noteInput;
     private NotepadDb noteDatabase;
     private Note note;
@@ -23,7 +23,7 @@ public class AddNoteActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.add_note_activity);
 
-        titleInput = (TextInputLayout) findViewById(R.id.titleInputField);
+        titleInput = (TextInputEditText) findViewById(R.id.titleInput);
         noteInput = (TextInputEditText) findViewById(R.id.noteInput);
         noteDatabase = NotepadDb.getInstance(AddNoteActivity.this);
         Button button = findViewById(R.id.button_save);
