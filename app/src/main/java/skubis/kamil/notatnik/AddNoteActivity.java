@@ -19,7 +19,7 @@ public class AddNoteActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.add_note_activity);
 
         titleInputField = findViewById(R.id.titleInputField);
         noteInput = findViewById(R.id.noteInput);
