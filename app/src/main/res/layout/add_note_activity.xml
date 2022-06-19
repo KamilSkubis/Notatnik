@@ -16,7 +16,9 @@
             android:layout_height="wrap_content"
             android:singleLine="true"
             android:inputType="text"
-            android:hint="Title" />
+            android:hint="Title"
+            android:maxLength="50"/>
+
     </com.google.android.material.textfield.TextInputLayout>
 
     <LinearLayout
@@ -40,7 +42,8 @@
                 android:layout_weight="1"
                 android:hint="Note"
                 android:inputType="textMultiLine|textNoSuggestions"
-                android:singleLine="false" />
+                android:singleLine="false"
+                android:maxLength="50"/>
 
         </com.google.android.material.textfield.TextInputLayout>
 
