@@ -8,16 +8,13 @@ import android.view.View;
 import android.widget.Button;
 
 import com.google.android.material.textfield.TextInputEditText;
-import com.google.android.material.textfield.TextInputLayout;
 
 import skubis.kamil.notatnik.model.Note;
-import skubis.kamil.notatnik.persistence.NotepadDb;
 import skubis.kamil.notatnik.persistence.ZarzadcaBazy;
 
 public class AddNoteActivity extends AppCompatActivity {
     private TextInputEditText titleInput;
     private TextInputEditText noteInput;
-    private NotepadDb noteDatabase;
     private Note note;
     private ZarzadcaBazy zb;
 
@@ -28,7 +25,6 @@ public class AddNoteActivity extends AppCompatActivity {
 
         titleInput = (TextInputEditText) findViewById(R.id.titleInput);
         noteInput = (TextInputEditText) findViewById(R.id.noteInput);
-        noteDatabase = NotepadDb.getInstance(AddNoteActivity.this);
         Button button = findViewById(R.id.button_save);
         zb = new ZarzadcaBazy(this);
 

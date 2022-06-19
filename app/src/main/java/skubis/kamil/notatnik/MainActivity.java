@@ -60,7 +60,6 @@ public class MainActivity extends AppCompatActivity {
         super.onResume();
 
         List<Note> nList = zb.dajWszystkie();
-
         ListView lv = (ListView) findViewById(R.id.listView);
         ListAdapter adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1,nList);
         lv.setAdapter(adapter);

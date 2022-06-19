@@ -73,8 +73,8 @@ public class Note {
 
     @Override
     public String toString() {
-        return  "Id=" + noteId +
+        return  "Id=" + noteId + "\t" +
                 ", Title='" + title + '\n' +
-                ", content='" + content;
+                content;
     }
 }
